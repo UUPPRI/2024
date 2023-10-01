@@ -1,0 +1,27 @@
+title:       "Himpunan Peraturan NKRI 2024"
+version:     "0000--01-Oct-2023"
+copyright:   "2023-2023"
+description: Himpunan Peraturan NKRI 2024.
+      This site is managed by VauLSMorg (vlsm.org) since 2024.
+google_analytics: UA-89852122-7
+disc: You are free to share, copy and redistribute the material of this site 
+      in any medium or format for any purpose, even commercially. 
+      Please give appropriate credit, provide a link to the page, 
+      and indicate if changes were made. You may do so in any reasonable manner. 
+      You should not apply legal terms or technological measures, 
+      that legally restrict others from doing anything that is permited here.
+show_downloads: false
+sitemap: true
+author:           "Abu A. Al-Kulunia"
+address:          "Cologne 50859"
+sitemap:          "true"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+urlweb:           "https://uuppri.github.io/2024/"
+urlcontact:       "TBA"
+urlgithub:        "https://github.com/UUPPRI/2024/"
+urlghpage:        "https://uuppri.github.io/2024/"
+keywords:         "jekyll, testing"
+github:           [metadata]
+
