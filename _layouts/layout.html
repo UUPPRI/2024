@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- File _layouts/layout.html           -->
+<!-- (c) 2021 - 2021 VauLSMorg           -->
+<!-- REV01: Sun 25 Jul 2021 10:22:49 WIB -->
+<!-- REV00: Sun 04 Jul 2021 10:48:43 WIB -->
+<!-- START: Wed 17 Feb 2021 19:44:53 WIB -->
+<!-- This is a free HTML file            -->
+{% include head.html %}
+<body class="plainclass1">
+<!-- body class="backclass" -->
+<div class="container">
+  <header>
+  <div class="row">
+    <div class="column left">
+      <img src="{{ site.baseurl }}/assets/images/default.jpg" alt="Default" style="width:130px; border-radius:50%">
+    </div>
+    <div class="column right1">
+      {% if page.title %}{{ page.title | escape }}
+      {% else %}{{ site.title | escape }}{% endif %}
+    </div>
+    <div class="column right2">
+      {% if page.author %}{{ page.author | escape }}
+      {% else %}{{ site.author | escape }}{% endif %}
+      ---
+      {% if page.address %}{{ page.address | escape }}
+      {% else %}{{ site.address | escape }}{% endif %}
+    </div>
+  </div>
+  </header>
+  {% include navbar-top.html %}
+  <section>
+     {{ content }}
+  </section>
+  {% include navbar-bottom.html %}
+  <br><br><br>
+  <h3>DISCLAIMER</h3>
+  <br><b>This is HOW Me Do IT!</b>
+  And it is in no way an official site!
+  There is no guarantee whatsoever for the accuracy and validity of the documents.
+  Use them at your own risk!
+<br><br>
+  This archive is based on "<i>Google There, Google Here (GSGS)</i>". Whether this is <b>PLAGIARY</b> or <b>RESEARCH</b>, there has never been a claim that this is an original work, nor is it necessarily the best solution, and not for Scopus consumption :). Please provide feedback, especially if you have alternative explanations. Hopefully, this note will be helpful in the future when you have forgotten how to solve this trivia problem.
+  <br><br><br>
+  <h3>DISKLAIMER</h3>
+  <br><b>INIlah yang KUlakukan!</b> Ini bukan arsip resmi!
+Tidak ada jaminan sama sekali atas keakuratan dan kesahihan dokumen. Risiko ditanggung sendiri, ya!
+<br><br>
+Arsip ini berbasis "<i>Google Sana, Google Sini (GSGS)</i>". Entah ini <b>PLAGIAT</b>, entah ini <b>RISET</b>, yang jelas tidak pernah ada klaim bahwa ini merupakan karya asli, serta belum tentu pula merupakan solusi terbaik, serta bukan untuk konsumsi Scopus :). Mohon kiranya memberikan tanggapan, terutama jika memiliki solusi alternatif. Semoga catatan ini akan bermanfaat di masa mendatang, saat sudah lupa cara menyelesaikan masalah trivia ini.<br><br><b>Qapla!</b><br><br>
+  {% include footer.html %}
+  {% include google-analytics.html %}
+  {% include scripts.html %}
+  <br><br>
+</div>
+</body>
+</html>
+
+
