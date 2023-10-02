@@ -1,12 +1,12 @@
 #!/bin/bash
-# REV08: Sun 01 Oct 2023 09:00
+# REV09: Mon 02 Oct 2023 13:00
+# REV08: Sun 01 Oct 2023 08:00
 # REV07: Tue 12 Oct 2021 11:00
-# REV06: Sun 25 Jul 2021 06:00
 # REV05: Wed 02 Jun 2021 09:00
 # REV03: Thu 22 Oct 2020 08:00
 # START: Tue 25 Dec 2018 10:00
 
-# Copyright (C) 2018-2023 Rahmat M. Samik-Ibrahim http://RahmatM.Samik-Ibrahim.vLSM.org/
+# Copyright (C) 2018-2023 Abdul Latip.
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -66,7 +66,8 @@ for II in \
     UI            \
     UU            \
 ; do
-    [ -d $II ] && mkidx $II
+    [[ "$II" == "${README}.md" ]] || mkdir -pv $II/
+     [ -d $II ] && mkidx $II
 done
 
 exit 0
