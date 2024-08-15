@@ -125,6 +125,7 @@ index.md
 
 ./KEPPRES:
 index.md
+KEPPRES-2024-010-PEMILU-LIBUR.pdf
 
 ./KEPSESMENKO:
 index.md
